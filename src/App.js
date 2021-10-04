@@ -25,7 +25,7 @@ function App() {
         <Switch>
         <Route path="/login" component={Login}/>
         <Route path="/register" component={Register}/>
-          <GuardedRoute path='/todo' component={TodoContainer} requiredRole={null}></GuardedRoute>
+          <GuardedRoute path='/' component={TodoContainer} requiredRole={null}></GuardedRoute>
         </Switch>
       </main>
       </BrowserRouter>
