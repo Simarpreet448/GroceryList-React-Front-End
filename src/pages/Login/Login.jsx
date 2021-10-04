@@ -14,9 +14,8 @@ function Login() {
     const { loggedIn, userCalled } = useSelector(state => state.user)
 
     if (loggedIn && userCalled) {
-        return <Redirect to='/' />
+        return <Redirect to='/todo' />
     }
-
     return (
             <form className="formcontainer" onSubmit={(e) => { e.preventDefault(); dispatch(attemptLogin(formEmail, password)) }}>
             <h1 className="h3 mb-3 fw-normal">Sign In</h1>

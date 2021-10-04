@@ -1,5 +1,4 @@
-//Mik, Sam, Simarpreet - 23/08/2021
-//for communication with the back end
+
 import {
     loginSuccess,
     registrationSuccess,
@@ -84,14 +83,10 @@ const attemptLogout = () => async dispatch => {
     }
 }
 
-const addTodo = (title) => { 
-
-}
 
 export {
     attemptLogin,
     attemptRegister,
     fetchUser,
     attemptLogout,
-    addTodo,
 }

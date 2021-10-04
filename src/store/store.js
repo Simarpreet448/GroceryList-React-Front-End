@@ -8,7 +8,7 @@ const userSlice = createSlice({
     initialState: {
         userCalled: false,
         name: "Waiting for user...",
-        email: "User Account",
+        email: "Please login to create a grocery list",
         role: null,
         loggedIn: false,
         registered: false,
@@ -32,7 +32,7 @@ const userSlice = createSlice({
         },
         logoutSuccess: state => {
             state.name = "No user"
-            state.email = "No email"
+            state.email = "Please login to create a grocery list"
             state.role = null
             state.loggedIn = false
             state.registered = false
